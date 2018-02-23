@@ -46,7 +46,7 @@ const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DI
 const size_t   DIFFICULTY_WINDOW                             = 720; // blocks
 const size_t   DIFFICULTY_CUT                                = 60;  // timestamps to cut after sorting
 const size_t   DIFFICULTY_LAG                                = 15;
-const unit64_t DIFFICULTY_BLOCKS_COUNT                       = DIFFICULTY_WINDOW + DIFFICULTY_LAG
+const uint64_t DIFFICULTY_BLOCKS_COUNT                       = DIFFICULTY_WINDOW + DIFFICULTY_LAG;
   
 const size_t   MAX_BLOCK_SIZE_INITIAL                        =  20 * 1024;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 1024;
@@ -106,7 +106,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  //"your_seed_ip1.com:8080",
+  //"192.168.1.25",
   //"your_seed_ip2.com:8080",
 };
 
